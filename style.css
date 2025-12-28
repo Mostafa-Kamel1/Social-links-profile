@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;   /* تنسيق الخط المستدعى من جوجل فونتس ع الصفحه كلها */
+} /* دا كدا هيتطبق على كل حاجه */
+
+.container{
+    background-color: hsl(0, 0%, 8%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; /* محاذاه افقيه*/
+    align-items: center; /* محاذاه عموديه */
+    background-attachment: fixed; /* الصوره لن تتحرك عند السكرول + الرو اللى تحت */
+    background-size: cover;
+}
+.box{
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 12px;
+    text-align: center;
+    width: 28%;
+    height: auto;
+    padding: 40px;
+}
+.image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.titleh1{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 600;
+}
+.titleh4{
+    color:  hsl(75, 94%, 57%);
+    margin-bottom: 20px;
+}
+.paragraph{
+    font-size: 0.875em;
+    color: hsl(0, 0%, 100%) ;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: grid;
+    gap: 15px;
+}
+.btn{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px 0;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none; /* مفيش اي تأثير على النص */
+    transition: all 0.3s ease; /* بيخلي تغيير اللون ياخد 0.3 ثانيه ناعم كدا */
+}
+.btn:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+@media (width: 320px){
+    .box {
+        width: 90%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+    .paragraph{
+        font-size: small;
+    }
+} 
+    
+@media (width: 375px){
+    .box {
+        width: 85%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+} 
+
+@media (width: 425px){
+    .box {
+        width: 80%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 25px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+} 
+
+@media (width: 768px){
+    .box {
+        width: 50%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 35px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+} 
+
+@media (width: 1024px){
+    .box {
+        width: 38%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 35px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+} 
+
+@media (width: 2560px){
+    .box {
+        width: 15%;       /* الكارت هياخد 90% من عرض الشاشة */
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 35px;
+    }
+    .titleh2 {
+        font-size: 20px;  /* تصغير حجم الخط شوية عشان مياخدش مساحة كبيرة */
+    }
+    .buttons {
+        padding: 10px 0;  /* تصغير ارتفاع الزرار ليتناسب مع شاشة الموبايل */
+    }
+} 
